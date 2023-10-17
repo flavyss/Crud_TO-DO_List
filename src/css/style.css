@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.menuMobile{
+    display: none;
+}
+
+header .logo .img img{
+    width: 50px;
+}
+
+header .menuDesktop ul{
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .menuDesktop ul li{
+    margin: 0 10px;
+}
+
+header .menuDesktop ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .menuDesktop ul li a:hover,
+header .menuDesktop ul li .ativo{
+    text-decoration: none;
+    color: #666;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    color: #666;  
+    margin-top: 25px;
+}
+
+footer span a i{
+    color: #666;  
+}
+
+footer span a{
+    color: #666;  
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+footer p{
+    padding: 5px 0;
+}
+
+
+@media screen and (max-width:500px){
+    header .menuDesktop{
+        display: none;
+    }
+    header .menuMobile{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    header .menuMobile ul{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 0;
+        overflow: hidden;
+        height: 100vh;
+        left: 0;
+        list-style: none;
+        top: 0;
+        transition: 1s;
+        background-color: #02011e;
+    }
+    header .menuMobile li{
+        margin: 10px 0;
+    }
+    header .menuMobile h2{
+        margin: 20px 0;
+    }
+    header .menuMobile a{
+        color: #fff;
+        text-decoration: none;
+    }
+    header .menuMobile a:hover{
+        color: #818181;
+    }
+}
+
+.aparece{
+    width: 100% !important;
+    transition: 1s !important;
+}

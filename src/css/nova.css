@@ -1,0 +1,77 @@
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    background-color: #02011e;
+    padding: 5px 0;
+}
+
+
+.logo{
+    {
+        display: flex;
+        align-items: center;
+    }
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.cadastro{
+    margin: 20px 0;
+    text-align: center;
+}
+section.cadastro h1{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+section.cadastro form{
+    width: 100%;
+    text-align: center;
+}
+
+section.cadastro form .w100,
+section.cadastro form .w100s{
+    width:30%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+section.cadastro form .w100 input,
+section.cadastro form .w100 textarea{
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+    padding: 5px;
+}
+section.cadastro form .w100 textarea{
+    height: 200px;
+}
+
+section.cadastro form .w100s input{
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #02011e;
+    color: #fff;
+}
+
+section.cadastro form .w100s input:hover{
+    background-color: #000;
+}
+
+@media screen and (max-width:500px){
+    section.cadastro form .w100,
+    section.cadastro form .w100s{
+        width:100%;
+    }
+}

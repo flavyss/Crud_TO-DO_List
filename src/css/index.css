@@ -1,0 +1,89 @@
+header{
+    background-color: #02011e;
+    padding: 5px 0;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+section h1{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+section .contAfa,
+.butons{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+section .contAfa{
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+section .titulo,
+section .butons{
+    width: 25%;
+    border-right: 1px solid #333;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section .butons  button{
+    width: 50%;
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 555px;
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+    background-color: rgb(255, 0, 0);
+}
+
+section .butons  button:nth-child(1){
+    background-color: rgb(255, 255, 0);
+}
+section .descricao{
+    width: 50%;
+    padding: 0 10px;
+    border-right: 1px solid #333;
+}
+
+@media screen and (max-width: 800px){
+    section .contAfa{
+        flex-direction: column;
+    }
+    section .contAfa:nth-child(1){
+        display: none;
+    }
+    section .titulo,
+    section .butons{
+        width: 100%;
+        margin: 20px 0;
+    }
+    section .descricao{
+        width: 100%;
+    }
+    section .titulo,
+    section .butons,
+    section .descricao{
+        border: none;
+    }
+}

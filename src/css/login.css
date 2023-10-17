@@ -1,0 +1,75 @@
+
+header .img{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header .img img{
+    width: 100%;
+}
+
+
+header form{
+    width: 100%;
+    text-align: center;
+}
+
+header form .w100,
+header form .w100s{
+    width: 30%;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+header .w100 input{
+    width: 95%;
+    padding: 5px;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: 1s;
+    outline: none;
+    border-bottom: 2px solid #777 !important;
+}
+header .w100s input{
+    width: 50%;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #353535;
+    cursor: pointer;
+    margin: 20px auto;
+    color: #fff;
+    border:none;
+}
+
+header form .w100s{
+    text-align: center;
+}
+
+header .w100 p{
+    font-size: 11px;
+    color: #353535;
+    text-decoration: none;
+}
+
+header .w100 input:focus{
+    width: 100%;
+    border-color: #353535 !important;
+}
+
+header .txts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    header form .w100,
+    header form .w100s{
+        width: 100%;
+    }
+}
